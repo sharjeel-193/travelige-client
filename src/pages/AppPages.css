@@ -1,0 +1,92 @@
+.profile-img{
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 90%;
+}
+.gallery{
+    /* border: 1px solid black; */
+
+}
+.post{
+    
+    border-radius: 20px;
+    /* border: 1px solid #424140; */
+    margin: 5px;
+    padding-left: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-data{
+    /* background-color: blueviolet; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.post-data > h4,h6,p{
+    margin: 3px;
+}
+.post-img{
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feed-post-user-img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: burlywood;
+    margin: 10px;
+}
+.feed-post-user-img > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+@media only screen and (max-width:768px){
+    .feed-post-user-img{
+        width: 35px;
+        height: 35px;
+
+    }
+}
+.card-columns {
+    column-count: 3;
+}
+@media only screen and (max-width: 1024px){
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media only screen and (max-width: 640px){
+    .card-columns {
+        column-count: 1;
+    }
+}
+.post-reactions i{
+    color: #424140;
+    font-size: 20px;
+    margin: 5px 10px 0 0;
+}
+.del-post-btn{
+    visibility: hidden;
+}
+.card-feed:hover > .card-content > .post-metadata > .del-post-btn{
+    /* display: block; */
+    visibility: visible;
+}
+.del-cmnt-btn{
+    visibility: hidden;
+}
+.cmnt-div:hover > .del-cmnt-btn{
+    visibility: visible;
+}
